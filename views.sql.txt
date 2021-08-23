@@ -1,0 +1,7 @@
+CREATE OR REPLACE VIEW v1 AS
+SELECT * FROM rating_comments WHERE place < 100
+WITH CHECK OPTION;
+
+CREATE OR REPLACE VIEW v2 AS
+SELECT * FROM articles WHERE rubric_of_article = 'Спорт'
+WITH CHECK OPTION;
